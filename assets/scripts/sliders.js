@@ -7,7 +7,7 @@ new Swiper('.about_placing_swiper', {
   },
 
   breakpoints: {
-    1100: {
+    1180: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
@@ -15,8 +15,8 @@ new Swiper('.about_placing_swiper', {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    500: {
-      slidesPerView: 3,
+    320: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
   },
@@ -36,11 +36,15 @@ new Swiper('.technologies_list', {
   },
 
   breakpoints: {
-    1200: {
+    1100: {
       slidesPerView: 4,
-      spaceBetween: 90,
+      spaceBetween: 11,
     },
-    500: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 11,
+    },
+    320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
@@ -61,9 +65,13 @@ new Swiper('.steps__container', {
   },
 
   breakpoints: {
-    1200: {
+    1100: {
       slidesPerView: 4,
-      spaceBetween: 90,
+      spaceBetween: 89,
+    },
+    868: {
+      slidesPerView: 2,
+      spaceBetween: 70,
     },
     500: {
       slidesPerView: 1,
@@ -86,11 +94,15 @@ new Swiper('.services', {
   },
 
   breakpoints: {
-    1200: {
+    1100: {
       slidesPerView: 4,
       spaceBetween: 11,
     },
-    500: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 11,
+    },
+    320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },

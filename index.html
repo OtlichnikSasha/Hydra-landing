@@ -6,13 +6,13 @@
         content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link rel='icon' type='image/svg' sizes='180x180' href='assets/img/logo.svg'>
-  <meta name="keywords" content="hydra, hydra landing, hydra vr, vr"/>
-  <meta name="author" content="Varlamov Aleksander">
-  <meta name="description" content='Hydra vr - complement your reality'/>
-  <meta property="og:title" content="Hydra vr - complement your reality"/>
-  <meta property="og:description" content="Hydra vr - complement your reality"/>
-  <meta property="og:image" content="./static/img/preview.jpg" />
-  <meta property="og:type" content="landing"/>
+  <meta name='keywords' content='hydra, hydra landing, hydra vr, vr' />
+  <meta name='author' content='Varlamov Aleksander'>
+  <meta name='description' content='Hydra vr - complement your reality' />
+  <meta property='og:title' content='Hydra vr - complement your reality' />
+  <meta property='og:description' content='Hydra vr - complement your reality' />
+  <meta property='og:image' content='./static/img/preview.jpg' />
+  <meta property='og:type' content='landing' />
   <link rel='preconnect' href='https://fonts.googleapis.com'>
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
 
@@ -30,7 +30,7 @@
 <header class='header'>
   <div class='container'>
     <div class='header__container'>
-      <a class='logo' href='#about'>
+      <a class='logo anchor_link' href='#about'>
         <img src='assets/img/logo.svg' alt='hydra' />
         <img src='assets/img/logo-text.svg' alt='hydra' />
       </a>
@@ -62,84 +62,110 @@
 
 
 <main>
-  <section id='about'>
-    <div class='container'>
-      <div class='about_preview'>
-        <div class='about_preview__content'>
-          <h2 class='heading'>
-            <span>Dive</span> Into The Depths
-            Of <span>Virtual Reality</span>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore nisl tincidunt eget. Lectus mauris eros in vitae .
-          </p>
-          <button class='button gradient_variant'>
-            BUILD YOUR WORLD
-          </button>
-        </div>
-        <div class='ellipse_wrapper'>
-          <div class='ellipse'>
-            <img src='assets/img/about_preview.png' alt='Dive Into the depths of virtual reality' />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='container'>
-      <div class='placing_variants'>
-        <div class='placing_variants__container' id='contact_us'>
-          <div class='about_placing_swiper'>
-            <div class='swiper-wrapper'>
-              <div class='swiper-slide'>
-                <div class='placing_variants_item'>
-                  <img src='assets/img/placing_variants/location.svg' alt='location' />
-                  <div>
-                    <h6>Pay Us a Visit</h6>
-                    <p>
-                      Union St, Seattle, WA 98101, United States
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class='swiper-slide'>
-                <div class='placing_variants_item'>
-                  <img src='assets/img/placing_variants/phone-call.svg' alt='call us' />
-                  <div>
-                    <h6>Give Us a Call</h6>
-                    <p>
-                      (110) 1111-1010
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class='swiper-slide'>
-                <div class='placing_variants_item'>
-                  <img src='assets/img/placing_variants/mail.svg' alt='location' />
-                  <div>
-                    <h6>Send Us a Message</h6>
-                    <p>
-                      Contact@HydraVTech.com
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <section id='about' class='about'>
+    <div class='about__line_wrapper'>
+      <img src='assets/img/about_line1.png' alt='line' class='line' />
+      <img src='assets/img/about_line2.png' alt='line' class='line' />
+      <img src='assets/img/about_line3.png' alt='line' class='line' />
+
+      <div class='container'>
+        <div class='about_preview'>
+          <div class='about_preview__content'>
+            <h2 class='heading'>
+              <span>Dive</span> Into The Depths
+              Of <span>Virtual Reality</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore nisl tincidunt eget. Lectus mauris eros in vitae.
+            </p>
+            <div class='text_with_arrow__chevron'>
+              <button class='button gradient_variant'>
+                BUILD YOUR WORLD
+              </button>
+              <svg width='67' height='67' viewBox='0 0 67 67' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <g id='outline / arrow-small-right'>
+                  <path id='shape'
+                        d='M47.4584 33.4999L19.5417 33.4999M47.4584 33.4999L36.2917 44.6666M47.4584 33.4999L36.2917 22.3333'
+                        stroke='#C0B7E8' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' />
+                </g>
+              </svg>
             </div>
-            <div class='swiper-button-prev'></div>
-            <div class='swiper-button-next'></div>
+          </div>
+          <div class='ellipse_wrapper'>
+            <img src='assets/img/about_line1.png' alt='line' class='line' />
+            <img src='assets/img/about_line2.png' alt='line' class='line' />
+            <img src='assets/img/about_line3.png' alt='line' class='line' />
+              <img src='assets/img/about_preview.png' alt='Dive Into the depths of virtual reality' />
+          </div>
+        </div>
+      </div>
+      <div class='container'>
+        <div class='placing_variants'>
+          <div class='placing_variants__container' id='contact_us'>
+            <div class='about_placing_swiper'>
+              <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                  <div class='placing_variants_item'>
+                    <img src='assets/img/placing_variants/location.svg' alt='location' />
+                    <div>
+                      <h6>Pay Us a Visit</h6>
+                      <p>
+                        Union St, Seattle, WA 98101, <br /> United States
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class='swiper-slide'>
+                  <div class='placing_variants_item'>
+                    <img src='assets/img/placing_variants/phone-call.svg' alt='call us' />
+                    <div>
+                      <h6>Give Us a Call</h6>
+                      <p>
+                        (110) 1111-1010
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class='swiper-slide'>
+                  <div class='placing_variants_item'>
+                    <img src='assets/img/placing_variants/mail.svg' alt='location' />
+                    <div>
+                      <h6>Send Us a Message</h6>
+                      <p>
+                        Contact@HydraVTech.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class='swiper-button-prev'></button>
+              <button class='swiper-button-next'></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <section class='about__wrapper'>
-
       <div class='container'>
         <div class='about__block'>
           <div class='about__block_content'>
             <h3 class='heading'>
               Introduction
             </h3>
-            <p>TO HYDRA VR</p>
+            <div class='text_with_arrow'>
+              <p>TO HYDRA VR</p>
+              <div class='text_with_arrow__chevron'>
+                <div class='arrow_line'></div>
+                <svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'>
+                  <path
+                    d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' />
+                </svg>
+              </div>
+            </div>
+
           </div>
           <p class='about__block_text'>
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin
@@ -158,15 +184,14 @@
             <div class='ellipse'>
               <img src='assets/img/about_picture.png' alt='about' />
             </div>
-
-            <div>
+            <div class='about__content'>
               <div class='about__block_content'>
                 <h3 class='heading'>
                   About
                 </h3>
                 <p>HYDRA VR</p>
               </div>
-              <p class='about__block_text'>
+              <p class='about__block_text about_hydra'>
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo.
                 Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at
                 risus
@@ -193,7 +218,17 @@
             <h3 class='heading'>
               Why build
             </h3>
-            <p>WITH HYDRA?</p>
+            <div class='text_with_arrow'>
+              <p>WITH HYDRA?</p>
+              <div class='text_with_arrow__chevron'>
+                <div class='arrow_line'></div>
+                <svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'>
+                  <path
+                    d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' />
+                </svg>
+              </div>
+            </div>
+
           </div>
           <p class='about__block_text'>
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin
@@ -324,21 +359,21 @@
             </div>
           </div>
           <button class='technologies_preview__button_wrapper' id='button_down'>
-            <p class='technologies_preview__button'>
+            <span class='technologies_preview__button'>
               <svg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <g id='outline / chevron-small-down'>
                   <path id='shape' d='M17.5 25L30 37.5L42.5 25' stroke='#433D60' stroke-width='3' stroke-linecap='round'
                         stroke-linejoin='round' />
                 </g>
               </svg>
-            </p>
+            </span>
           </button>
         </div>
       </div>
     </section>
   </div>
 
-  <div class='container'>
+  <div class='container technologies'>
     <section class='technologies_list'>
       <div class='swiper-wrapper'>
         <div class='swiper-slide'>
@@ -380,7 +415,7 @@
   </div>
 
 
-  <section id='how_to'>
+  <section id='how_to' class='how_to'>
     <div class='container'>
       <div class='about__block'>
         <div class='about__block_content'>
@@ -396,9 +431,7 @@
                   d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' />
               </svg>
             </div>
-
           </div>
-
         </div>
 
         <p class='about__block_text'>
@@ -511,67 +544,72 @@
 
         <form class='join_form' id='submit_form'>
           <div class='join_form_item'>
-            <input class='input' placeholder='First name' />
-            <input class='input' placeholder='Last name' />
+            <input class='input' name='firstName' placeholder='First name' />
+            <input class='input' name='lastName' placeholder='Last name' />
           </div>
           <div class='join_form_item'>
-            <input class='input' placeholder='Email' />
-            <input class='input' placeholder='Phone number' />
+            <input class='input' name='email' placeholder='Email' />
+            <input class='input' name='phone' placeholder='Phone number' />
           </div>
-
-          <input class='input' placeholder='Subject' />
-
-          <textarea class='textarea' placeholder='Tell Us Something...'></textarea>
-
+          <input class='input' name='subject' placeholder='Subject' />
+          <textarea class='textarea' name='tellUs' placeholder='Tell Us Something...'></textarea>
           <button class='button gradient_variant' disabled>Send to Hydra</button>
         </form>
       </div>
     </div>
-
   </section>
 </main>
 
 <footer class='footer'>
-  <img src='assets/img/top-footer-line.png' class='line' alt='line' />
-  <img src='assets/img/bottom-footer-line.png' class='line' alt='line' />
+    <img src='assets/img/top-footer-line.png' class='line' alt='line' />
+    <img src='assets/img/bottom-footer-line.png' class='line' alt='line' />
+
   <div class='container'>
     <div class='footer__container'>
-      <a class='footer__logo' href='#about'>
+      <a class='footer__logo anchor_link' href='#about'>
         <img src='assets/img/logo.svg' alt='hydra' />
       </a>
 
-      <ul class='footer__nav'>
-        <li>
-          <a href='#about' class='footer__nav-link anchor_link'>About</a>
-        </li>
-        <li>
-          <a href='#services' class='footer__nav-link anchor_link'>Services</a>
-        </li>
-        <li>
-          <a href='#technologies' class='footer__nav-link anchor_link'>TECHNOLOGIES</a>
-        </li>
-        <li>
-          <a href='#how_to' class='footer__nav-link anchor_link'>How to</a>
-        </li>
-        <li>
-          <a href='#join_hydra' class='footer__nav-link anchor_link'>JOIN HYDRA</a>
-        </li>
-      </ul>
-
-      <ul class='footer__nav'>
-        <li>
-          <a href='' class='footer__nav-link'>F.A.Q</a>
-        </li>
-        <li>
-          <a href='' class='footer__nav-link'>SITEMAP</a>
-        </li>
-        <li>
-          <a href='' class='footer__nav-link'>CONDITIONS</a>
-        </li>
-        <li>
-          <a href='' class='footer__nav-link'>Licences</a>
-        </li>
-      </ul>
+      <nav class='footer__nav_list'>
+        <div class='block'>
+          <div class='divider'></div>
+          <ul class='footer__nav'>
+            <li>
+              <a href='#about' class='footer__nav-link anchor_link'>About</a>
+            </li>
+            <li>
+              <a href='#services' class='footer__nav-link anchor_link'>Services</a>
+            </li>
+            <li>
+              <a href='#technologies' class='footer__nav-link anchor_link'>TECHNOLOGIES</a>
+            </li>
+            <li>
+              <a href='#how_to' class='footer__nav-link anchor_link'>How to</a>
+            </li>
+            <li>
+              <a href='#join_hydra' class='footer__nav-link anchor_link'>JOIN HYDRA</a>
+            </li>
+          </ul>
+          <div class='divider'></div>
+        </div>
+        <div class='block'>
+          <ul class='footer__nav'>
+            <li>
+              <a href='' class='footer__nav-link'>F.A.Q</a>
+            </li>
+            <li>
+              <a href='' class='footer__nav-link'>SITEMAP</a>
+            </li>
+            <li>
+              <a href='' class='footer__nav-link'>CONDITIONS</a>
+            </li>
+            <li>
+              <a href='' class='footer__nav-link'>Licences</a>
+            </li>
+          </ul>
+          <div class='divider'></div>
+        </div>
+      </nav>
 
       <div class='social_networks_wrapper'>
         <h6>SOCIALIZE WITH HYDRA</h6>
@@ -584,7 +622,7 @@
             <img src='assets/img/social_networks/twitter.svg' alt='twitter' />
           </a>
           <a href='https://linkedin.com' target='_blank' rel='noreferrer noopener'>
-            <img src='assets/img/social_networks/linkedin.svg' alt='linked in' />
+            <img src='assets/img/social_networks/linkedin.svg' alt='linkedin' />
           </a>
           <a href='https://youtube.com' target='_blank' rel='noreferrer noopener'>
             <img src='assets/img/social_networks/youtube.svg' alt='youtube' />
@@ -611,9 +649,7 @@
         2023 © HYDRA LANDING PAGE <br /><span>-</span> BY ZINE. E. FALOUTI <br /><span>-</span> ALL RIGHTS RESERVED
       </p>
     </div>
-
   </div>
-
 </footer>
 <script src='assets/scripts/sliders.js'></script>
 
