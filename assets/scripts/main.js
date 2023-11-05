@@ -2,6 +2,8 @@
   const burgerMenu = document.getElementById('burger_menu');
   const navLinks = document.getElementsByClassName('anchor_link');
   const buttonDown = document.getElementById('button_down');
+  const headerNavLinks = document.getElementsByClassName('nav__link');
+  const pathnameAnchor = window.location.hash;
 
   const handleClickNavLink = (anchor) => {
     const anchorSection = document.getElementById(anchor.split('#')[1]);
@@ -9,6 +11,17 @@
     if (nav.classList.contains('open')) toggleBurgerMenu();
     anchorSection?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  handleClickNavLink(pathnameAnchor);
+
+  if (pathnameAnchor) {
+    for (let i = 0; i < headerNavLinks.length; i++) {
+      if (headerNavLinks[i].href.split('#')[1] === pathnameAnchor.replace('#', ''))
+        return headerNavLinks[i].classList.add('active_link');
+    }
+  } else {
+    headerNavLinks[0].classList.add('active_link');
+  }
 
   const toggleBurgerMenu = () => {
     const nav = document.getElementById('nav');
@@ -21,6 +34,16 @@
     navLinks[i].onclick = (event) => {
       event.preventDefault();
       handleClickNavLink(navLinks[i].href);
+    };
+  }
+
+  for (let i = 0; i < headerNavLinks.length; i++) {
+    headerNavLinks[i].onclick = (event) => {
+      event.preventDefault();
+      handleClickNavLink(headerNavLinks[i].href);
+      const activeLink = document.getElementsByClassName('active_link');
+      if (activeLink?.length) activeLink[0].classList.remove('active_link');
+      headerNavLinks[i].classList.add('active_link');
     };
   }
 
